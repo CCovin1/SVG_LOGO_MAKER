@@ -1,5 +1,6 @@
 # Logo Generator Readme
 This project is a logo generator that allows users to create custom SVG logos with text and various shapes. The user can input up to three characters for the logo, choose the text color and shape, and specify the shape color. The generated SVG logo will be saved in a file named logo.svg.
+https://watch.screencastify.com/v/qKeKD5yo6aqAzjOi9dJm
 
 ## Requirements
 To run this logo generator, you will need to have the following installed:
