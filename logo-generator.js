@@ -34,3 +34,19 @@ function promptUserInput(prompt) {
   });
 }
 
+// Main function to run the application
+async function generateLogo() {
+  const text = await promptUserInput('Enter up to three characters for the logo: ');
+  const textColor = await promptUserInput('Enter text color (keyword or hexadecimal number): ');
+  const shapes = ['circle', 'triangle', 'square'];
+  const shape = await promptUserInput(`Choose a shape from ${shapes.join(', ')}: `);
+  if (!shapes.includes(shape.toLowerCase())) {
+    console.error('Invalid shape chosen. Exiting...');
+    return;
+  }
+  const shapeColor = await promptUserInput('Enter shape color (keyword or hexadecimal number): ');
+
+  createLogoSVG(text, textColor, shape, shapeColor);
+}
+
+generateLogo();
